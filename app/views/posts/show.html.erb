@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<table style="width: 100%;">
+
+ <thead>
+      <tr>
+           <th>Author</th>
+           <th>Title</th>
+           <th>Tags</th>
+           <th>Body</th>
+           <th>Published on</th>
+         </tr>
+ </thead>
+
+ <tbody>
+       <tr>
+            <td><%= @posts.author %></td>
+            <td><%= @posts.title %></td>
+            <td><%= @posts.tags %></td>
+             <td><%= @posts.body %></td>
+            <td><%= @posts.published_on %></td>
+            <!-- <td><%= link_to 'Edit', edit_post_path(@post) %> | 
+            </td>
+            -->
+            <td><%= link_to 'Back', posts_path %></td>
+        </tr>
+
+ <tbody>
+
+</table>
+
+
+
